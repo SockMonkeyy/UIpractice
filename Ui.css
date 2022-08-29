@@ -396,13 +396,10 @@ text-align: left;
 }
 
 .parallax {
-    background: url('/ChowTime/Assets/railroadpark.jpg') repeat fixed 100%;
+    background: url('/UIpractice/Assets/railroadpark.jpg') repeat fixed 100%;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
- 
- 
-}
+    }
 
 .bc{
     color: #e89e30;
