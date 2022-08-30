@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Balinese&display=swap');
 
 body {
     padding: 0;
     margin: 0;
 z-index: -1;
+border: 1px solid black;
     background-repeat: no-repeat;
     background-blend-mode: lighten;
     background: -moz-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgb(232, 158, 48) 100%);
     background: -webkit-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, #e89e30 100%);
-    background: linear-gradient(135deg, rgb(173, 63, 149) 1%, rgba(232, 158, 48) 25%, rgba(26, 188, 156, 1) 50%, #e89e30 100%);
+    background: linear-gradient(135deg, rgb(173, 63, 149) 1%, rgba(232, 158, 48) 5%, rgba(26, 188, 156, 1) 15%, #e89e30 100%);
 }
 
 .mastHead {
@@ -21,7 +23,7 @@ z-index: -1;
 }
 
 .fa-book-open{
-    background: -webkit-linear-gradient(135deg, #e89e30 50%, rgb(156, 26, 188));
+    background: -webkit-linear-gradient(135deg, #ec9026 10%, rgb(156, 26, 188),#26a3ec 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -45,10 +47,78 @@ z-index: -1;
     border-image-source: linear-gradient(135deg, #8c3fad, #e89e30, #25b195, rgb(140, 63, 173), #25b195);
 }
 
+.bdr-grd1 {
+    border: 1px solid;
+    border-image-slice: 1;
+    border-width: 1px;
+    
+}
+
+.bdr-purp1 {
+    border-image-source: linear-gradient(135deg, #8c3fad, #e89e30, #25b195, rgb(140, 63, 173), #25b195);
+    
+}
+
 .bg-dark1 {
     background-color: rgba(0, 0, 0, 0);
     border-bottom: .5px solid;
     border-color: linear-gradient(rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+}
+
+.burger{
+    text-align: right;
+    background-color: #e89e30;
+    border-radius: 20%;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgb(173, 63, 149) 1%, rgba(232, 158, 48) 25%, rgba(26, 188, 156, 1) 50%, #e89e30 100%);
+}
+
+.myBtn{
+    width: 35%;
+   
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0);
+    padding: 1rem;
+    background-color: transparent;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
+    
+}
+
+.br-50{
+    border-radius: 10%;
+}
+
+@keyframes blink {
+    20%,
+    24%,
+    55% {
+      color: #111;
+      text-shadow: none;
+    }
+  
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+  /*     color: #fccaff;
+      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+    text-shadow: 0 0 5px #e89e30, 0 0 15px #e89e30, 0 0 20px #e89e30, 0 0 40px #e89e30, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+      color: #fff6a9;
+    }
+  }
+  
+
+.myBtn:hover{
+    color: #e89e30;
+    background: linear-gradient(135deg, rgb(173, 63, 149) 1%, rgba(232, 158, 48) 25%, rgba(26, 188, 156, 1) 50%, #e89e30 100%);
+   font-size: 1.1rem;
+  
 }
 
 .btn{
@@ -399,8 +469,67 @@ text-align: left;
     background: url('/UIpractice/Assets/railroadpark.jpg') repeat fixed 100%;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+   
     }
+    .parallax1 {
+        background: url('/UIpractice/Assets/hours.jpg') repeat fixed 100%;
+        background-size: contain;
+        background-position: center;
+        height: 100vh;
+        background-repeat: no-repeat;
+        width: 100%;
+       
+        }
 
+.hours{
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./Assets/bama.jpg);
+}
 .bc{
     color: #e89e30;
+}
+
+.newOnline{
+    background-color: #0000009c;
+    margin-left: 1rem;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+   
+}
+
+.nacho{
+    border-radius: 50%;
+    max-width: fit-content;
+   width: 30px;
+    margin: 0 auto;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.fd{
+    position: relative;
+    bottom: 10rem;
+    padding-bottom: 0;
+}
+
+@media all and (min-width: 653px) {
+    .fd{
+        position: relative;
+        bottom: 0rem;
+    }
+    
+}
+
+.fdDriver{
+    position: relative;
+    bottom: -5rem;
+}
+
+.noto{
+    font-family: 'Noto Serif Balinese', serif;
 }
